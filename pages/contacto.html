@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Mi pagina</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <h1 class="titulo-home text-secondary">Pagina de contacto</h1>
+        <a href="./index.html">
+          <img src="../images/CARRITOimaginatonlol.png" alt="logo" width="30" />
+        </a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-contacto">
+      <form class="form" action="https://formspree.io/f/xdapypzd" method="POST">
+        <label class="form__label">
+          Your name:
+          <input type="text" name="nombre" />
+        </label>
+        <label class="form__label">
+          Your email:
+          <input type="email" name="email" />
+        </label>
+        <label class="form__label">
+          Your message:
+          <textarea class="form__textarea" name="message"></textarea>
+        </label>
+        <!-- Campo para la redirección -->
+        <input
+          type="hidden"
+          name="_redirect"
+          value="https://tusitio.com/gracias.html"
+        />
+        <!-- your other form fields go here -->
+        <button class="form__button btn color-primario" type="submit">
+          Send
+        </button>
+        <button class="btn danger" type="reset">Limpiar</button>
+      </form>
+      <br />
+
+      <h2>O MEU LUGAR</h2>
+    </main>
+
+    <footer>
+      <p id="titulo-footer">Sitio del proyecto</p>
+      <nav>
+        <ul class="footer-list">
+          <li>
+            <img src="../images/whatsapp.png" alt="logo de whatsapp" />
+          </li>
+          <li>
+            <img src="../images/comercio-justo.png" alt="logo de comercio" />
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

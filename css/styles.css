@@ -1,0 +1,164 @@
+/* Afecta a todo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Saira Condensed", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #6e5a8e;
+  color: #fff7fb;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+header {
+  background-color: rgb(32, 94, 75);
+}
+
+.seccion-1 {
+  border: solid red;
+  width: 100%;
+}
+.seccion-2 {
+  border: solid blue;
+  width: 50%;
+}
+
+.parrafo {
+  color: blueviolet;
+  font-size: 16px;
+
+  cursor: pointer;
+
+  /* como se muestra un elemento. block, inline, inline-bloc, none */
+}
+
+.parrafo-2 {
+  color: rgb(92, 92, 233);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  list-style-position: inside;
+}
+
+ul a {
+  text-decoration: none;
+}
+
+.padre {
+  font-size: 20px; /* tamaño base del padre */
+}
+
+.hijo {
+  font-size: 1.5em; /* 1.5 × 20px = 30px */
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: #f9f9f9;
+}
+
+.color-primario {
+  background-color: #4f46e5;
+}
+.color-secundario {
+  background-color: #6b7280;
+}
+.danger {
+  background-color: #ef4444;
+}
+
+/* selector de etiqueta: afecta a todas las etiquetas de un tipo */
+footer {
+  background-color: darksalmon;
+}
+
+.footer-list img {
+  width: 5rem;
+}
+
+#titulo-footer {
+  color: rgba(14, 5, 26, 0.98);
+}
+
+.main-contacto {
+  background-image: url("https://es.vecteezy.com/vectores-gratis/chapoteo");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Formulario */
+
+.form {
+  width: 50%;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.form__label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+
+  /* para que ocupe el ancho y el input se vaya para abajo */
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form__input,
+.form__textarea {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #3f51b5;
+  font-size: 16px;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+  border-bottom-color: #303f9f; /* azul más oscuro al enfocar */
+}
+
+.form__button:hover {
+  background: #1a237e;
+}
+
+/* --Tarjeta --*/
+.card {
+  background-color: #8a79a8;
+  color: #2a1e35;
+  width: 40rem;
+
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+}
