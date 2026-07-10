@@ -1,0 +1,98 @@
+[
+  {
+    "id": "1",
+    "nombre": "Jugo de acelga",
+    "precio": 5000,
+    "img": "../images/Productos-Saludables-Batidos-Jugos-scaled.jpg"
+  },
+  {
+    "id": "2",
+    "nombre": "Jugo de manzana",
+    "precio": 6000,
+    "img": "../images/Jugo-Manzana-Arandanos-Dia-470-Ml-_1.jpg"
+  },
+  {
+    "id": "3",
+    "nombre": "Jugo de multifruta",
+    "precio": 7000,
+    "img": "../images/Jugo-Organico-Las-Brisas-Multifruta-Jugo-Organico-Las-Brisas-Multifruta-X-500cc-1-941564.jpg"
+  },
+  {
+    "id": "4",
+    "nombre": "Jugo de pomelo y frutilla",
+    "precio": 4500,
+    "img": "../images/pomeladafrutilla4-383b70f87b3006c15316986839375702-1024-1024.jpg"
+  },
+  {
+    "id": "5",
+    "nombre": "Jugo de remolacha",
+    "precio": 5600,
+    "img": "../images/purple11-remolacha1fa0fc416684432278588-1024-1024.jpg"
+  },
+  {
+    "id": "6",
+    "nombre": "Soda detox",
+    "precio": 8100,
+    "img": "../images/sodas-detox3177-f550640af513bb10c517745423753952-1024-1024.jpg"
+  },
+  {
+    "id": "7",
+    "nombre": "Detox Orgánico del Bosque",
+    "precio": 8500,
+    "img": "../images/MermeladaSA-Frutilla.png"
+  },
+  {
+    "id": "8",
+    "nombre": "Detox Orgánico Patagonia",
+    "precio": 8500,
+    "img": "../images/DetoxPatagonia.png"
+  },
+  {
+    "id": "9",
+    "nombre": "Limonada con Hibiscus",
+    "precio": 7800,
+    "img": "../images/Limonada-Hibiscus.png"
+  },
+  {
+    "id": "10",
+    "nombre": "Limonada con Jengibre",
+    "precio": 7500,
+    "img": "../images/Limonada-Jengibre.png"
+  },
+  {
+    "id": "11",
+    "nombre": "Limonada con Curcuma",
+    "precio": 7500,
+    "img": "../images/Limonada-Curcuma.png"
+  },
+  {
+    "id": "12",
+    "nombre": "Limonada con Pepino",
+    "precio": 7500,
+    "img": "../images/Limonada-Pepino.png"
+  },
+  {
+    "id": "13",
+    "nombre": "Limonada con Cardamomo",
+    "precio": 7500,
+    "img": "../images/Limonada-Cardamomo.png"
+  },
+  {
+    "id": "14",
+    "nombre": "Limonada con Manzanilla",
+    "precio": 7500,
+    "img": "../images/Limonada-Manzanilla.png"
+  },
+  {
+    "id": "15",
+    "nombre": "Limonada con Yerba Mate",
+    "precio": 7500,
+    "img": "../images/Limonada-Mate.png"
+  },
+  {
+    "id": "16",
+    "nombre": "Jugo orgánico de limón con jengibre",
+    "precio": 6800,
+    "img": "../images/JugoLimon.png"
+  }
+]
