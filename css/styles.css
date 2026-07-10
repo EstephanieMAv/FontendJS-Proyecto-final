@@ -3,82 +3,158 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Saira Condensed", sans-serif;
 }
 
 html {
   font-size: 62.5%;
+  position: relative;
 }
 
 body {
+  font-family: "Saira Condensed", sans-serif;
   font-size: 1.6rem;
-  background: #6e5a8e;
-  color: #fff7fb;
+  background: #fffd98;
+  color: #1a0911;
 }
 
 main {
   width: 80%;
   margin: auto;
   padding-bottom: 2rem;
+
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
 }
 
-header {
-  background-color: rgb(32, 94, 75);
-}
-
-.seccion-1 {
-  border: solid red;
+header,
+footer {
+  background: #7a9cc6;
+  color: #ffffff;
   width: 100%;
-}
-.seccion-2 {
-  border: solid blue;
-  width: 50%;
-}
-
-.parrafo {
-  color: blueviolet;
-  font-size: 16px;
-
-  cursor: pointer;
-
-  /* como se muestra un elemento. block, inline, inline-bloc, none */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
 }
 
-.parrafo-2 {
-  color: rgb(92, 92, 233);
-  font-size: 16px;
-  font-style: italic;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: underline;
+nav {
+  display: flex;
+  top: 0;
 }
 
-ul {
-  list-style: none;
+.logo-container {
+  margin-left: 2rem;
+}
+
+.logo-container,
+.header-nav ul li a {
   list-style-position: inside;
-}
-
-ul a {
+  font-size: 3rem;
+  color: inherit;
+  display: inline-block;
+  padding: 2rem;
   text-decoration: none;
 }
 
-.padre {
-  font-size: 20px; /* tamaño base del padre */
+.header-nav {
+  margin-right: 2rem;
 }
 
-.hijo {
-  font-size: 1.5em; /* 1.5 × 20px = 30px */
+.header-nav ul,
+footer,
+.footer-list {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  gap: 2rem;
 }
 
+.footer-list li {
+  padding: 1rem;
+}
+
+.footer-list img {
+  width: 5rem;
+  padding: 0.5rem;
+}
+
+#titulo-footer {
+  color: rgba(14, 5, 26, 0.98);
+}
+/* home/body */
+.about {
+  background-color: #ffffff;
+  background-image: url("../images/Gemini_Generated_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  margin: 2rem;
+  padding: 20rem;
+  width: 100%;
+}
+
+.parrafo {
+  color: rgb(31, 31, 44);
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem;
+}
+
+.text {
+  /*width: 10px;
+  height: 10rem;*/
+  background-color: #e3e2de;
+  padding: 3rem;
+  max-width: 40rem;
+  border-radius: 1rem;
+  align-self: flex-start;
+}
+.titulo-home {
+  margin: 2rem 0;
+}
+
+.main-contacto {
+  background-image: url("../images/Gemini_Generated_vecto-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 8rem 3rem 3rem;
+}
+
+.main-contacto > section:last-child {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 10rem;
+}
+
+.text {
+  background-color: #e3e2de;
+  padding: 3rem;
+  max-width: 40rem;
+  align-items: flex-start;
+  border-radius: 1rem;
+  margin-left: 10rem;
+}
+/*Boton*/
 .btn {
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 1.6rem;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  color: #f9f9f9;
+  color: #b3d2b2;
 }
-
+/*colores*/
 .color-primario {
   background-color: #4f46e5;
 }
@@ -89,46 +165,27 @@ ul a {
   background-color: #ef4444;
 }
 
-/* selector de etiqueta: afecta a todas las etiquetas de un tipo */
-footer {
-  background-color: darksalmon;
-}
-
-.footer-list img {
-  width: 5rem;
-}
-
-#titulo-footer {
-  color: rgba(14, 5, 26, 0.98);
-}
-
-.main-contacto {
-  background-image: url("https://es.vecteezy.com/vectores-gratis/chapoteo");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 90vh;
-  width: 100%;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Formulario */
-
-.form {
-  width: 50%;
-  background-color: #f9f9f9;
-  border-radius: 10px;
+.form-contacto {
+  width: 100%;
+  background-color: #bde4a7;
+  max-width: 50rem;
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px #b3d2b2;
 }
 
 .form__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
   font-size: 18px;
   font-weight: bold;
   color: #333;
-
   /* para que ocupe el ancho y el input se vaya para abajo */
-  display: block;
-  margin-bottom: 0.5rem;
+
+  margin-bottom: 2rem;
 }
 
 .form__input,
@@ -150,15 +207,31 @@ footer {
 }
 
 /* --Tarjeta --*/
+.contenedor-tarjetas {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
 .card {
-  background-color: #8a79a8;
+  background-color: #bde4a7;
   color: #2a1e35;
-  width: 40rem;
+  width: 30rem;
 
   border-radius: 1rem;
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 2rem;
 }
 
 .card img {
   width: 100%;
+  height: 20rem;
+  object-fit: cover;
 }

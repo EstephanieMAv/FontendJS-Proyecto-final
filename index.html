@@ -15,20 +15,29 @@
   <body>
     <header>
       <div class="logo-container">
-        <a href="./index.html">
-          <img src="../images/NANGicon.png" alt="icono" width="50" />
+        <a href="index.html">
+          <img src="./images/HOMErashadAbdulov.png" alt="icono" width="50" />
         </a>
       </div>
-
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
-        <li><a href="./pages/carrito.html">Carrito</a></li>
-      </ul>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./pages/contacto.html">Contacto</a></li>
+          <li>
+            <a href="./pages/carrito.html"
+              ><img
+                src="./images/CARRITOimaginatonlol.png"
+                alt="carrito"
+                width="40"
+            /></a>
+          </li>
+          <!-- Agregar link al carrito con un ID para el contador -->
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section class="seccion-1">
+      <section class="about">
         <h1 class="titulo-home">Pagina principal</h1>
 
         <!-- agregamos class -->
@@ -37,38 +46,36 @@
         </p>
       </section>
 
-      <!-- <section class="seccion-2">
-        <p class="parrafo-2">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum magni
-          aliquid quis fugiat? Maiores quidem debitis voluptatum. Fugit error
-          exercitationem officia voluptates ex distinctio cum cumque
-          perspiciatis, quia neque tempora!
-        </p>
-        <ul>
-          <li>Arroz</li>
-          <li>Lechuga</li>
-          <li>Calabacin</li>
-        </ul>
-        <div class="padre">
-          Texto en el padre
-          <p class="hijo">Texto del hijo</p>
-        </div>
-      </section> -->
-
       <section>
         <h2 class="titulo-productos">Nuestros productos</h2>
         <div class="contenedor-tarjetas"></div>
       </section>
 
       <section>
-        <img src="./images/CARRITOimaginatonlol.png" alt="icono" width="50" />
         <button class="btn color-primario">Enviar</button>
         <button class="btn color-secundario">Continuar</button>
         <button class="btn danger">Eliminar</button>
       </section>
     </main>
     <footer>
-      <h2 id="titulo-footer">Pie de pagina</h2>
+      <h2 id="titulo-footer">
+        Sitio creado para Talento Tech por Estephanie Vargas como Proyecto
+        final.
+      </h2>
+      <nav>
+        <ul class="footer-list">
+          <li>
+            <a href="https://web.whatsapp.com"
+              ><img src="./images/whatsapp.png" alt="logo de whatsapp"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.tiendanube.com/login"
+              ><img src="./images/comercio-justo.png" alt="logo de comercio"
+            /></a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>

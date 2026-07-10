@@ -15,53 +15,76 @@
   <body>
     <header>
       <div class="logo-container">
-        <h1 class="titulo-home text-secondary">Pagina de contacto</h1>
-        <a href="./index.html">
-          <img src="../images/CARRITOimaginatonlol.png" alt="logo" width="30" />
+        <a href="../index.html">
+          <img src="../images/HOMErashadAbdulov.png" alt="icono" width="50" />
         </a>
       </div>
+      </div>
 
-      <nav>
+      <nav class="header-nav">
         <ul>
           <li><a href="../index.html">Inicio</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a href="carrito.html">Contacto</a></li>
+          <li>
+            <a href="carrito.html"
+              ><img
+                src="../images/CARRITOimaginatonlol.png"
+                alt="Carrito"
+                width="40"
+            /></a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main class="main-contacto">
-      <form class="form" action="https://formspree.io/f/xdapypzd" method="POST">
-        <label class="form__label">
-          Tu nombre:
-          <input type="text" name="nombre" />
-        </label>
-        <label class="form__label">
-          Tu email:
-          <input type="email" name="email" />
-        </label>
-        <label class="form__label">
-          Tu mensaje:
-          <textarea class="form__textarea" name="message"></textarea>
-        </label>
-        <!-- Campo para la redirección -->
-        <input
-          type="hidden"
-          name="_redirect"
-          value="https://tusitio.com/gracias.html"
-        />
-        <!-- your other form fields go here -->
-        <button class="form__button btn color-primario" type="submit">
-          Enviar
-        </button>
-        <button class="btn danger" type="reset">Limpiar</button>
-      </form>
-      <br />
+      <section class="text">
+        <h1 class="titulo-home text-secondary">Página de contacto</h1>
+        <p>
+          A continuacion si desea comunicarse con nosotros puede realizar el
+          formulario y enviarlo. Nos pondremos en contacto lo más pronto
+          posible.
+        </p>
+      </section>
+
+      <section>
+        <form
+          class="form-contacto"
+          action="https://formspree.io/f/xdapypzd"
+          method="POST"
+        >
+          <label class="form__label">
+            Tu nombre:
+            <input type="text" name="nombre" />
+          </label>
+          <label class="form__label">
+            Tu email:
+            <input type="email" name="email" />
+          </label>
+          <label class="form__label">
+            Tu mensaje:
+            <textarea class="form__textarea" name="message"></textarea>
+          </label>
+          <!-- Campo para la redirección -->
+          <input
+            type="hidden"
+            name="_redirect"
+            value="https://tusitio.com/gracias.html"
+          />
+          <!-- your other form fields go here -->
+          <button class="form__button btn color-primario" type="submit">
+            Enviar
+          </button>
+          <button class="btn danger" type="reset">Limpiar</button>
+        </form>
+        <br />
+      </section>
     </main>
 
     <footer>
       <p id="titulo-footer">
-        Sitio creado para Talento Tech por Estephanie Vargas.
+        Sitio creado para Talento Tech por Estephanie Vargas como Proyecto
+        final.
       </p>
       <nav>
         <ul class="footer-list">
