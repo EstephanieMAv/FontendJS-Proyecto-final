@@ -8,7 +8,7 @@ const renderizarProductos = () => {
   //Agarramos el div para meter las tarjetas
   const contenedor = document.getElementById("contenedor-tarjetas");
 
-  fetch("../data/productos.json")
+  fetch("./data/productos.json")
     .then((response) => response.json())
     .then((data) => {
       data.forEach((producto) => {
@@ -29,8 +29,8 @@ const renderizarProductos = () => {
         button.classList.add("btn", "bg-secondary", "text-dark");
         button.textContent = "Agregar al carrito";
 
-        buttom.addEventListener("click", () => {
-          agregarAlCarrito(producto);
+        button.addEventListener("click", () => {
+          agregarAlCarrito();
         });
 
         //Armar la estructura de la tarjeta

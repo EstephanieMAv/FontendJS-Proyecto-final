@@ -1,7 +1,7 @@
 import {
   guardarCarrito,
   obtenerCarrito,
-  vaciarCarritoStorage,
+  vaciarCarrito as vaciarCarritoStorage,
 } from "./storage.js";
 
 import { actualizarContador, mostrarMensaje } from "./ui.js";
@@ -31,7 +31,7 @@ export const eliminarProducto = (indice) => {
 };
 
 export const vaciarCarrito = () => {
-  vaciarCarrito();
+  vaciarCarritoStorage();
   actualizarContador([]);
   mostrarMensaje("Carrito vaciado");
 };

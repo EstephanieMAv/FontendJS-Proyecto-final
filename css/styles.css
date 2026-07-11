@@ -115,6 +115,10 @@ footer,
   margin: 2rem 0;
 }
 
+.titulo-carrito {
+  color: #7a9cc6;
+}
+
 .main-contacto {
   background-image: url("../images/Gemini_Generated_vecto-removebg-preview.png");
   background-repeat: no-repeat;

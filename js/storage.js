@@ -1,4 +1,3 @@
-import { guardarCarrito, obtenerCarrito, vaciarCarrito } from "./storage.js";
 const KEY = "carrito";
 
 export const guardarCarrito = (carrito) => {
