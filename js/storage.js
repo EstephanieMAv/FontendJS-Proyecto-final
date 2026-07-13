@@ -8,6 +8,7 @@ export const guardarCarrito = (carrito) => {
 export const obtenerCarrito = () => {
   //Convertimos texto a js para obtener los datos
   return JSON.parse(localStorage.getItem(KEY)) || [];
+  return carrito.filter((p) => p);
 };
 
 export const vaciarCarrito = () => {

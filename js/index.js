@@ -30,7 +30,7 @@ const renderizarProductos = () => {
         button.textContent = "Agregar al carrito";
 
         button.addEventListener("click", () => {
-          agregarAlCarrito();
+          agregarAlCarrito(producto);
         });
 
         //Armar la estructura de la tarjeta

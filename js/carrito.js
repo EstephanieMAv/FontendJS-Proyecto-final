@@ -1,5 +1,5 @@
 import { obtenerCarrito } from "./storage.js";
-import { eliminarCarrito, vaciarCarrito } from "../funcionesCarrito.js";
+import { eliminarProducto, vaciarCarrito } from "./funcionesCarrito.js";
 import { actualizarContador } from "./ui.js";
 
 const renderizarCarrito = () => {
@@ -11,7 +11,7 @@ const renderizarCarrito = () => {
   contenedor.innerHTML = "";
   divAcciones.innerHTML = "";
 
-  if (tarjeta.length) {
+  if (!carrito.length) {
     const mensaje = document.createElement("p");
     mensaje.classList.add("mensaje-carrito-vacio");
     mensaje.textContent = "El carrito esta vacio";
@@ -25,7 +25,7 @@ const renderizarCarrito = () => {
     tarjeta.classList.add("card");
 
     const img = document.createElement("img");
-    img.src = `../${producto.img}`;
+    img.src = producto.img;
     img.alt = producto.nombre;
 
     const titulo = document.createElement("h3");
@@ -34,13 +34,13 @@ const renderizarCarrito = () => {
     const precio = document.createElement("p");
     precio.textContent = `$${producto.precio}`;
 
-    const btnEliminar = document.createElement("buttom");
+    const btnEliminar = document.createElement("button");
     btnEliminar.classList.add("btn");
     btnEliminar.classList.add("btn-eliminar-carrito");
-    btnEliminar.textContent = "Eliminar carrito";
+    btnEliminar.textContent = "Eliminar producto";
 
     btnEliminar.addEventListener("click", () => {
-      eliminarCarrito(index);
+      eliminarProducto(index);
       renderizarCarrito();
     });
 
@@ -51,7 +51,7 @@ const renderizarCarrito = () => {
     contenedor.appendChild(tarjeta);
   });
 
-  const btnVaciar = document.createElement("buttom");
+  const btnVaciar = document.createElement("button");
   btnVaciar.classList.add("btn");
   btnVaciar.classList.add("btn-vaciar-carrito");
   btnVaciar.textContent = "Vaciar carrito";
